@@ -1,8 +1,6 @@
 /node_modules
 /js
 /scss
-/public
-/css
 ignorar.html
 package-lock.json
 package.json

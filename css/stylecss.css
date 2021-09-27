@@ -1,0 +1,322 @@
+@charset "UTF-8";
+header {
+  background-color: #353535;
+  padding: 0 !important; }
+
+.NavBarType {
+  background-color: #353535;
+  height: 3.5rem;
+  padding: 0 !important;
+  margin: auto;
+  width: 100% !important; }
+  .NavBarType .DivRow {
+    padding-top: 10px;
+    height: 100%;
+    width: 100% !important;
+    margin: 0 !important; }
+    .NavBarType .DivRow .ImgType {
+      height: 1.5rem;
+      width: 1.5rem; }
+    .NavBarType .DivRow .DivAHome {
+      margin-left: 0%;
+      padding: 0;
+      width: fit-content; }
+      .NavBarType .DivRow .DivAHome a {
+        text-decoration: none;
+        color: white;
+        width: auto;
+        text-align: start; }
+        .NavBarType .DivRow .DivAHome a h3 {
+          font-family: "Barlow Semi Condensed", sans-serif;
+          border-radius: .20rem;
+          padding: .5rem;
+          font-size: 1.2rem;
+          margin: 0; }
+    .NavBarType .DivRow .DivANav {
+      padding: 0;
+      width: fit-content; }
+      .NavBarType .DivRow .DivANav a {
+        text-decoration: none;
+        color: white;
+        width: auto;
+        padding: 0;
+        text-align: center; }
+        .NavBarType .DivRow .DivANav a h3 {
+          border-radius: .20rem;
+          padding: .5rem;
+          font-size: .9rem;
+          margin: 0; }
+  .NavBarType .DivANav :hover {
+    transform: scale(1.1);
+    transition: .25s;
+    background-color: #c8c8c8;
+    color: #161616; }
+  @media only screen and (max-width: 767px) {
+    .NavBarType .DivAHome {
+      margin-left: 0 !important;
+      width: fit-content; }
+    .NavBarType .DivAHome :hover {
+      transform: scale(1.3);
+      transition: .25s;
+      background-color: #353535;
+      color: white; }
+    .NavBarType .DivANav :hover {
+      transform: scale(1.3);
+      transition: .25s;
+      background-color: #353535;
+      color: white; } }
+
+footer {
+  background-color: #353535; }
+  footer .FooterContactos {
+    padding: 1rem; }
+    footer .FooterContactos .TituloF1 {
+      width: fit-content; }
+      footer .FooterContactos .TituloF1 p {
+        text-align: center;
+        font-size: 1.05rem;
+        color: white !important; }
+    footer .FooterContactos .FooterRed {
+      height: 4rem;
+      margin-bottom: 1rem; }
+      footer .FooterContactos .FooterRed .col-1 {
+        width: fit-content;
+        padding: 0 !important; }
+        footer .FooterContactos .FooterRed .col-1 a {
+          list-style: none;
+          margin: 0;
+          padding: 0 !important; }
+          footer .FooterContactos .FooterRed .col-1 a img {
+            height: 1.5rem;
+            width: 1.5rem;
+            opacity: 60%;
+            padding: 0 !important; }
+          footer .FooterContactos .FooterRed .col-1 a img:hover {
+            transition: .5s;
+            transform: scale(1.15);
+            opacity: 100%; }
+  footer .Ubicación {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    footer .Ubicación .GoogleMaps {
+      margin: auto;
+      padding: 0;
+      border-radius: .5rem;
+      border: black 1px solid;
+      width: 16rem;
+      height: 16rem; }
+  footer .CopyRight {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    padding: 0; }
+    footer .CopyRight .CopyRight h5 {
+      margin-top: 1rem !important;
+      margin-bottom: .5rem !important;
+      font-size: 1rem; }
+    footer .CopyRight .CopyRight p {
+      font-size: .75rem;
+      margin: 0; }
+
+.CopyRight {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.CopyRight h5 {
+  color: white;
+  margin-top: 1rem !important;
+  margin-bottom: .5rem !important;
+  padding: 0;
+  font-size: 1rem; }
+
+.CopyRight p {
+  color: white;
+  font-size: .75rem;
+  padding: 0;
+  margin: 0; }
+
+main {
+  padding: 0;
+  background-color: #d8d8d8;
+  height: auto; }
+
+.Home {
+  padding-top: 4%;
+  padding-bottom: 4%; }
+  .Home h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: .8rem;
+    font-weight: 600; }
+  .Home .Titulo1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0; }
+  .Home .CarouselHome {
+    padding-top: var(--bs-gutter-x, 0.75rem);
+    padding-bottom: var(--bs-gutter-x, 0.75rem); }
+    .Home .CarouselHome .TituloA {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      color: black; }
+    .Home .CarouselHome .TituloB {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      color: white; }
+    .Home .CarouselHome .PA {
+      font-size: .8em;
+      color: black; }
+    .Home .CarouselHome .PB {
+      font-size: .8em; }
+
+.Proyectos .TituloProyectos {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  height: 15vh;
+  border-bottom: black solid 1.5px; }
+  .Proyectos .TituloProyectos h2 {
+    width: fit-content;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic; }
+
+.Proyectos .ContenidoProyecto {
+  padding-bottom: 5rem; }
+  .Proyectos .ContenidoProyecto .CajaProyecto {
+    padding: .5rem; }
+    .Proyectos .ContenidoProyecto .CajaProyecto a .ImagenProyectos {
+      height: fit-content;
+      width: 100%;
+      opacity: 70%;
+      border-radius: .25rem; }
+    .Proyectos .ContenidoProyecto .CajaProyecto a :hover {
+      transform: scale(1.04);
+      transition: .5s;
+      opacity: 100%; }
+
+.Trabajos .TrabajosTitulo {
+  padding-top: 6%;
+  padding-bottom: 6%; }
+  .Trabajos .TrabajosTitulo h2 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic; }
+  .Trabajos .TrabajosTitulo p {
+    text-align: justify; }
+  .Trabajos .TrabajosTitulo img {
+    height: auto;
+    width: 100%; }
+
+.Estudio {
+  height: 95vh; }
+  .Estudio .EstudioDiv {
+    height: fit-content; }
+    .Estudio .EstudioDiv h2 {
+      text-align: center;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 2rem; }
+    .Estudio .EstudioDiv p {
+      text-align: center; }
+
+.perfil-titulo {
+  padding-bottom: 2rem;
+  border-bottom: black solid 1px;
+  height: 15vh; }
+  .perfil-titulo h2 {
+    padding-top: 2rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 2rem; }
+
+.Perfil01 {
+  margin-top: 1rem; }
+  .Perfil01 .PerfilNombre {
+    margin-top: 1rem;
+    text-align: center; }
+  .Perfil01 .Contactos {
+    width: 100%;
+    padding: 0 !important; }
+    .Perfil01 .Contactos .TituloF1 h3 {
+      text-align: center;
+      font-size: 1.05rem;
+      color: black !important; }
+    .Perfil01 .Contactos .Redes {
+      height: 4rem;
+      margin-bottom: 1rem; }
+      .Perfil01 .Contactos .Redes .col-1 {
+        width: fit-content;
+        padding: 0 !important; }
+        .Perfil01 .Contactos .Redes .col-1 a {
+          list-style: none;
+          margin: 0;
+          padding: 0 !important; }
+          .Perfil01 .Contactos .Redes .col-1 a img {
+            height: 1.5rem;
+            width: 1.5rem;
+            opacity: 60%;
+            padding: 0 !important; }
+          .Perfil01 .Contactos .Redes .col-1 a img:hover {
+            transition: .5s;
+            transform: scale(1.15);
+            opacity: 100%; }
+
+.Perfil02 {
+  margin-top: 1rem;
+  padding-bottom: 5rem; }
+  .Perfil02 .PerfilNombre {
+    margin-top: 1rem;
+    text-align: center; }
+  .Perfil02 .Contactos {
+    width: 100%;
+    padding: 0 !important; }
+    .Perfil02 .Contactos .TituloF1 h3 {
+      text-align: center;
+      font-size: 1.05rem;
+      color: black !important; }
+    .Perfil02 .Contactos .Redes {
+      height: 4rem;
+      margin-bottom: 1rem; }
+      .Perfil02 .Contactos .Redes .col-1 {
+        width: fit-content;
+        padding: 0 !important; }
+        .Perfil02 .Contactos .Redes .col-1 a {
+          list-style: none;
+          margin: 0;
+          padding: 0 !important; }
+          .Perfil02 .Contactos .Redes .col-1 a img {
+            height: 1.5rem;
+            width: 1.5rem;
+            opacity: 60%;
+            padding: 0 !important; }
+          .Perfil02 .Contactos .Redes .col-1 a img:hover {
+            transition: .5s;
+            transform: scale(1.15);
+            opacity: 100%; }
+
+.contacto .ContactoTitulo {
+  padding-bottom: 2rem;
+  border-bottom: black solid 1px;
+  height: 15vh; }
+  .contacto .ContactoTitulo h2 {
+    padding-top: 2rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 2rem; }
+
+.contacto .Formulario {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
