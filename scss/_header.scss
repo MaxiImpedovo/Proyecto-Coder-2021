@@ -23,7 +23,7 @@ header{
     width: $v-100 !important;
 
     .DivRow{
-        padding-top: 10px;
+        padding-top: .5rem;
         height: $v-100;
         width: $v-100 !important;
         margin: $v-0 !important;
@@ -54,30 +54,37 @@ header{
                 }
             } 
         }
+        .DivUL{
 
-        .DivANav {
+            list-style: none;
+            margin: 0;
             padding: 0;
-            width: fit-content;
             
-
-            a {
-                text-decoration: none;
-                color: white;
-                width: $v-auto;
-                padding: $v-0;
-                text-align: center;
-
-                h3{
-                    border-radius: .20rem;
-                    padding: .5rem;
-                    font-size: .9rem;
-                    margin: $v-0;
-                } 
+            .DivANav {
+                padding: 0;
+                width: fit-content;
+                
+    
+                a {
+                    text-decoration: none;
+                    color: white;
+                    width: $v-auto;
+                    padding: $v-0;
+                    text-align: center;
+    
+                    h3{
+                        border-radius: .20rem;
+                        padding: .5rem;
+                        font-size: .9rem;
+                        margin: $v-0;
+                    } 
+                }
+            
+    
+               
             }
-        
-
-           
         }
+        
     }
 
 // .DivAHome :hover{
