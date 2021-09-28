@@ -1,0 +1,147 @@
+$font-titulo: 'Bebas Neue', cursive;
+$font-primery:'Urbanist', sans-serif;
+$font-secundaria:'Barlow Semi Condensed', sans-serif;
+$font-size-1: 4rem;
+$font-size-2: 1.75rem;
+$font-size-3: 1rem;
+$color-primario: rgb(53, 53, 53);
+$color-secundario:  rgb(216, 216, 216);
+$v-0: 0;
+$v-100: 100%;
+$v-auto: auto;
+
+
+
+.perfil-titulo {
+    padding-bottom: 2rem;
+    border-bottom: black solid 1px;
+    height: 15vh;
+
+    h2 {
+        padding-top: 2rem;
+    font-family: $font-secundaria;
+    font-size: 3rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 2rem;
+    }
+}
+
+
+
+.Perfil01{
+
+    margin-top: 1rem;
+    
+
+    .PerfilNombre {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .Contactos {
+        width: 100%;
+        padding: 0 !important;
+    
+        .TituloF1 {
+            
+            
+            h3 {
+                text-align: center;
+                font-size: 1.05rem;
+                color: black !important;
+            }
+        }
+        
+        .Redes {
+            height: 4rem;
+            margin-bottom: 1rem;
+            
+        
+            .col-1 {
+                width: fit-content;
+                padding: 0 !important;
+                a{
+                    list-style: none;
+                    margin: $v-0;
+                    padding: $v-0 !important; 
+                    
+                    img{
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        opacity: 60%;
+                        padding: 0 !important;
+                    }
+        
+                    img:hover{
+                        transition: .5s;
+                        transform: scale(1.15);
+                        opacity: 100%
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
+
+.Perfil02{
+
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+
+    .PerfilNombre {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .Contactos {
+        width: 100%;
+        padding: 0 !important;
+    
+        .TituloF1 {
+            
+            
+            h3 {
+                text-align: center;
+                font-size: 1.05rem;
+                color: black !important;
+            }
+        }
+        
+        .Redes {
+            height: 4rem;
+            margin-bottom: 1rem;
+            
+        
+            .col-1 {
+                width: fit-content;
+                padding: 0 !important;
+                a{
+                    list-style: none;
+                    margin: $v-0;
+                    padding: $v-0 !important; 
+                    
+                    img{
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        opacity: 60%;
+                        padding: 0 !important;
+                    }
+        
+                    img:hover{
+                        transition: .5s;
+                        transform: scale(1.15);
+                        opacity: 100%
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
+
+
+    

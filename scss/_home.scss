@@ -1,0 +1,74 @@
+$font-titulo: 'Bebas Neue', cursive;
+$font-primery:'Urbanist', sans-serif;
+$font-secundaria:'Barlow Semi Condensed', sans-serif;
+$font-tercera: 'Montserrat', sans-serif;
+$font-size-1: 4rem;
+$font-size-2: 1.75rem;
+$font-size-3: 1rem;
+$color-primario: rgb(53, 53, 53);
+$color-secundario:  rgb(216, 216, 216);
+$v-0: 0;
+$v-100: 100%;
+$v-auto: auto;
+
+main{
+    padding: $v-0;
+    background-color: $color-secundario;
+    height: $v-auto;    
+}
+.Home{
+    
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    h2{
+        font-family: $font-tercera;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    
+
+    .Titulo1 {
+        font-family: $font-titulo;
+        font-size: 4rem;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+
+    .CarouselHome{
+        padding-top: var(--bs-gutter-x, 0.75rem);
+        padding-bottom: var(--bs-gutter-x, 0.75rem);
+        
+        .TituloA {
+            font-family: $font-tercera;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .TituloB{
+            font-family: $font-tercera;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .PA {
+            font-size: .8em;
+            color: black;
+        }
+
+        .PB{
+            font-size: .8em;
+            
+        }
+    
+    }
+    
+    
+    
+}
+

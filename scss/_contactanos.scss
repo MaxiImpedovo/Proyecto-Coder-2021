@@ -1,0 +1,35 @@
+$font-titulo: 'Bebas Neue', cursive;
+$font-primery:'Urbanist', sans-serif;
+$font-secundaria:'Barlow Semi Condensed', sans-serif;
+$font-size-1: 4rem;
+$font-size-2: 1.75rem;
+$font-size-3: 1rem;
+$color-primario: rgb(53, 53, 53);
+$color-secundario:  rgb(216, 216, 216);
+$v-0: 0;
+$v-100: 100%;
+$v-auto: auto;
+
+
+.contacto {
+    .ContactoTitulo {
+
+        padding-bottom: 2rem;
+        border-bottom: black solid 1px;
+        height: 15vh;
+    
+        h2 {
+            padding-top: 2rem;
+        font-family: $font-secundaria;
+        font-size: 3rem;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 2rem;
+        }    
+    }
+
+    .Formulario {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
