@@ -12,9 +12,10 @@ $v-100: 100%;
 $v-auto: auto;
 
 main{
+
     padding: $v-0;
     background-color: $color-secundario;
-    height: $v-auto;    
+    height: 97vh;    
 }
 .Home{
     
@@ -22,7 +23,7 @@ main{
     padding-bottom: 4%;
 
     h2{
-        font-family: $font-tercera;
+        font-family: $font-secundaria;
         font-size: .8rem;
         font-weight: 600;
     }
@@ -35,6 +36,47 @@ main{
         padding: 0;
         margin: 0;
     }
+
+    .contenedor_rotacion{
+        // border: 1px solid #000;
+        margin: 0;
+        padding: 0;
+        width: 16rem;
+        height: 3rem;
+
+        overflow: hidden;
+
+        ul{
+            padding: 0px;
+            list-style: none;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+
+            animation: rotar 12s infinite;
+
+        }
+
+        @keyframes rotar {
+            
+            0%{margin-top: 0%;}
+            20%{margin-top: 0%;}
+
+            25%{margin-top: -3rem;}
+            45%{margin-top: -3rem;}
+
+            50%{margin-top: -6rem;}
+            70%{margin-top: -6rem;}
+
+            75%{margin-top: -3rem;}
+            95%{margin-top: -3rem;}
+
+            100%{margin-top: 0;}
+
+        }
+    }
+
+
 
     .CarouselHome{
         padding-top: var(--bs-gutter-x, 0.75rem);

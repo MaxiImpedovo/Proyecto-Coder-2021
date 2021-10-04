@@ -75,11 +75,10 @@ footer {
   footer .FooterContactos {
     padding: 1rem; }
     footer .FooterContactos .TituloF1 {
-      width: fit-content; }
-      footer .FooterContactos .TituloF1 p {
-        text-align: center;
-        font-size: 1.05rem;
-        color: white !important; }
+      width: fit-content;
+      color: white; }
+      footer .FooterContactos .TituloF1 h4 {
+        font-size: 1rem; }
     footer .FooterContactos .FooterRed {
       height: 4rem;
       margin-bottom: 1rem; }
@@ -142,13 +141,13 @@ footer {
 main {
   padding: 0;
   background-color: #d8d8d8;
-  height: auto; }
+  height: 97vh; }
 
 .Home {
   padding-top: 4%;
   padding-bottom: 4%; }
   .Home h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-size: .8rem;
     font-weight: 600; }
   .Home .Titulo1 {
@@ -157,6 +156,39 @@ main {
     font-weight: 400;
     padding: 0;
     margin: 0; }
+  .Home .contenedor_rotacion {
+    margin: 0;
+    padding: 0;
+    width: 16rem;
+    height: 3rem;
+    overflow: hidden; }
+    .Home .contenedor_rotacion ul {
+      padding: 0px;
+      list-style: none;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      animation: rotar 12s infinite; }
+
+@keyframes rotar {
+  0% {
+    margin-top: 0%; }
+  20% {
+    margin-top: 0%; }
+  25% {
+    margin-top: -3rem; }
+  45% {
+    margin-top: -3rem; }
+  50% {
+    margin-top: -6rem; }
+  70% {
+    margin-top: -6rem; }
+  75% {
+    margin-top: -3rem; }
+  95% {
+    margin-top: -3rem; }
+  100% {
+    margin-top: 0; } }
   .Home .CarouselHome {
     padding-top: var(--bs-gutter-x, 0.75rem);
     padding-bottom: var(--bs-gutter-x, 0.75rem); }
@@ -232,6 +264,9 @@ main {
     .Estudio .EstudioDiv p {
       text-align: center; }
 
+main {
+  height: 100%; }
+
 .perfil-titulo {
   padding-bottom: 2rem;
   border-bottom: black solid 1px;
@@ -244,70 +279,50 @@ main {
     font-style: italic;
     margin-bottom: 2rem; }
 
-.Perfil01 {
-  margin-top: 1rem; }
-  .Perfil01 .PerfilNombre {
+.Perfil {
+  height: 100%;
+  padding-bottom: 3rem; }
+  .Perfil .Perfil01, .Perfil .Perfil02 {
     margin-top: 1rem;
-    text-align: center; }
-  .Perfil01 .Contactos {
-    width: 100%;
-    padding: 0 !important; }
-    .Perfil01 .Contactos .TituloF1 h3 {
-      text-align: center;
-      font-size: 1.05rem;
-      color: black !important; }
-    .Perfil01 .Contactos .Redes {
-      height: 4rem;
-      margin-bottom: 1rem; }
-      .Perfil01 .Contactos .Redes .col-1 {
-        width: fit-content;
-        padding: 0 !important; }
-        .Perfil01 .Contactos .Redes .col-1 a {
-          list-style: none;
-          margin: 0;
+    height: 100%; }
+    .Perfil .Perfil01 .DivPerfil, .Perfil .Perfil02 .DivPerfil {
+      background-color: #e9e9e9;
+      border-radius: .5rem;
+      width: 15rem;
+      height: 28rem;
+      margin: 0;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column; }
+      .Perfil .Perfil01 .DivPerfil .PerfilNombre, .Perfil .Perfil02 .DivPerfil .PerfilNombre {
+        margin-top: 1rem;
+        text-align: center; }
+      .Perfil .Perfil01 .DivPerfil .ImgPerfil, .Perfil .Perfil02 .DivPerfil .ImgPerfil {
+        margin: 0 auto;
+        height: fit-content;
+        width: fit-content; }
+      .Perfil .Perfil01 .DivPerfil .Contactos, .Perfil .Perfil02 .DivPerfil .Contactos {
+        font-size: 5rem;
+        width: 100%;
+        margin-bottom: 1rem; }
+        .Perfil .Perfil01 .DivPerfil .Contactos h3, .Perfil .Perfil02 .DivPerfil .Contactos h3 {
+          text-align: center;
+          font-size: 1.05rem;
+          color: black !important; }
+      .Perfil .Perfil01 .DivPerfil .DivIMG, .Perfil .Perfil02 .DivPerfil .DivIMG {
+        margin-top: 1rem;
+        padding-left: 0 !important;
+        padding-right: 0 !important; }
+        .Perfil .Perfil01 .DivPerfil .DivIMG a img, .Perfil .Perfil02 .DivPerfil .DivIMG a img {
+          height: 1.5rem;
+          width: 1.5rem;
+          opacity: 60%;
           padding: 0 !important; }
-          .Perfil01 .Contactos .Redes .col-1 a img {
-            height: 1.5rem;
-            width: 1.5rem;
-            opacity: 60%;
-            padding: 0 !important; }
-          .Perfil01 .Contactos .Redes .col-1 a img:hover {
-            transition: .5s;
-            transform: scale(1.15);
-            opacity: 100%; }
-
-.Perfil02 {
-  margin-top: 1rem;
-  padding-bottom: 5rem; }
-  .Perfil02 .PerfilNombre {
-    margin-top: 1rem;
-    text-align: center; }
-  .Perfil02 .Contactos {
-    width: 100%;
-    padding: 0 !important; }
-    .Perfil02 .Contactos .TituloF1 h3 {
-      text-align: center;
-      font-size: 1.05rem;
-      color: black !important; }
-    .Perfil02 .Contactos .Redes {
-      height: 4rem;
-      margin-bottom: 1rem; }
-      .Perfil02 .Contactos .Redes .col-1 {
-        width: fit-content;
-        padding: 0 !important; }
-        .Perfil02 .Contactos .Redes .col-1 a {
-          list-style: none;
-          margin: 0;
-          padding: 0 !important; }
-          .Perfil02 .Contactos .Redes .col-1 a img {
-            height: 1.5rem;
-            width: 1.5rem;
-            opacity: 60%;
-            padding: 0 !important; }
-          .Perfil02 .Contactos .Redes .col-1 a img:hover {
-            transition: .5s;
-            transform: scale(1.15);
-            opacity: 100%; }
+        .Perfil .Perfil01 .DivPerfil .DivIMG a img:hover, .Perfil .Perfil02 .DivPerfil .DivIMG a img:hover {
+          transition: .5s;
+          transform: scale(1.15);
+          opacity: 100%; }
 
 .contacto .ContactoTitulo {
   padding-bottom: 2rem;

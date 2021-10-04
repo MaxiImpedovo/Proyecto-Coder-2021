@@ -10,7 +10,9 @@ $v-0: 0;
 $v-100: 100%;
 $v-auto: auto;
 
-
+main{
+    height: 100%;
+}
 
 .perfil-titulo {
     padding-bottom: 2rem;
@@ -28,43 +30,57 @@ $v-auto: auto;
 }
 
 
-
-.Perfil01{
-
-    margin-top: 1rem;
+.Perfil{
+    height: 100%;
+    padding-bottom: 3rem;
+        
+    .Perfil01, .Perfil02{
     
-
-    .PerfilNombre {
         margin-top: 1rem;
-        text-align: center;
-    }
-    
-    .Contactos {
-        width: 100%;
-        padding: 0 !important;
-    
-        .TituloF1 {
+        height: 100%;
+
+        .DivPerfil{
             
+            background-color: rgb(233, 233, 233);
+            border-radius: .5rem;
+
+            width: 15rem;
+            height: 28rem;
+            margin: 0;
+            margin-bottom: 2rem;
+            padding: 1rem;
+
+            display: flex;
+            flex-direction: column;
             
-            h3 {
+            .PerfilNombre {
+                margin-top: 1rem;
                 text-align: center;
-                font-size: 1.05rem;
-                color: black !important;
             }
-        }
-        
-        .Redes {
-            height: 4rem;
-            margin-bottom: 1rem;
-            
-        
-            .col-1 {
+
+            .ImgPerfil {
+                margin: 0 auto;
+                height: fit-content;
                 width: fit-content;
-                padding: 0 !important;
+            }
+            
+            .Contactos {
+                font-size: 5rem;
+                width: 100%; 
+                margin-bottom: 1rem; 
+                h3 {
+                    text-align: center;
+                    font-size: 1.05rem;
+                    color: black !important;
+                }
+                
+            }
+     
+            .DivIMG {
+                margin-top: 1rem;
+                padding-left: 0!important;
+                padding-right: 0!important;
                 a{
-                    list-style: none;
-                    margin: $v-0;
-                    padding: $v-0 !important; 
                     
                     img{
                         height: 1.5rem;
@@ -79,69 +95,7 @@ $v-auto: auto;
                         opacity: 100%
                     }
                 }
-            }
-            
+            } 
         }
     }
-
 }
-
-.Perfil02{
-
-    margin-top: 1rem;
-    padding-bottom: 5rem;
-
-    .PerfilNombre {
-        margin-top: 1rem;
-        text-align: center;
-    }
-    
-    .Contactos {
-        width: 100%;
-        padding: 0 !important;
-    
-        .TituloF1 {
-            
-            
-            h3 {
-                text-align: center;
-                font-size: 1.05rem;
-                color: black !important;
-            }
-        }
-        
-        .Redes {
-            height: 4rem;
-            margin-bottom: 1rem;
-            
-        
-            .col-1 {
-                width: fit-content;
-                padding: 0 !important;
-                a{
-                    list-style: none;
-                    margin: $v-0;
-                    padding: $v-0 !important; 
-                    
-                    img{
-                        height: 1.5rem;
-                        width: 1.5rem;
-                        opacity: 60%;
-                        padding: 0 !important;
-                    }
-        
-                    img:hover{
-                        transition: .5s;
-                        transform: scale(1.15);
-                        opacity: 100%
-                    }
-                }
-            }
-            
-        }
-    }
-
-}
-
-
-    
