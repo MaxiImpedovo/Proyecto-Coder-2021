@@ -33,5 +33,13 @@ $v-auto: auto;
             width: 100%;
             
         }
+        a{
+            background-color: $color-primario;
+            padding: .5rem;
+            border-radius: .5rem;
+            text-decoration: none;
+            color: $color-secundario;
+            
+        }
     }
 }
