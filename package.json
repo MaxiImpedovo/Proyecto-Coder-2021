@@ -1,0 +1,29 @@
+{
+  "name": "terraza-impedovo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/stylecss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Maxi Imepdovo",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiImpedovo/Proyecto-Coder-2021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaxiImpedovo/Proyecto-Coder-2021/issues"
+  },
+  "homepage": "https://github.com/MaxiImpedovo/Proyecto-Coder-2021#readme",
+  "description": "Pagina dedicada al estudio de arquitectura TERRAZA 2021",
+  "keywords": [
+    "TERRAZA"
+  ]
+}
