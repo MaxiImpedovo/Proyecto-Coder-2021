@@ -12,34 +12,69 @@ $v-auto: auto;
 
 .Trabajos {
 
-    .TrabajosTitulo{
+    padding-left: 10%;
+    padding-right: 10%;
 
-        padding-top: 6%;
-        padding-bottom: 6%;
+    .TituloTrabajo{
+
+        padding-top: 5%;
+        padding-bottom: 2%;
 
         h2{
-        font-family: $font-secundaria;
-        font-size: 2.5rem;
-        font-weight: 400;
-        font-style: italic;
-        }
+            
+            font-family: $font-secundaria;
+            font-size: 2.5rem;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            }
+    }
+    
+    .ContenidoTrabajo{
+
+        padding-top: 5%;
+        padding-bottom: 5%h;
 
         p{
-            text-align: justify;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-align: center;
         }
 
         img{
             height: auto;
             width: 100%;
-            
-        }
+            aspect-ratio: 1.77;  
+        }  
+    }
+
+    hr{
+        margin-right: 10%;
+        margin-left:10%;
+    }
+
+    .btn-volver{
+
+        display: flex;
+        justify-content: center;
+
+        padding-top: 3%;
+        padding-bottom: 6%;
+
         a{
             background-color: $color-primario;
-            padding: .5rem;
-            border-radius: .5rem;
-            text-decoration: none;
             color: $color-secundario;
-            
+            padding: .45rem;
+            border-radius: .35rem;
+            text-decoration: none;
         }
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .Trabajos{
+        padding-left: 0;
+        padding-right: 0;
     }
 }

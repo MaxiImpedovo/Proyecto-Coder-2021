@@ -236,25 +236,48 @@ main {
       transition: .5s;
       opacity: 100%; }
 
-.Trabajos .TrabajosTitulo {
-  padding-top: 6%;
-  padding-bottom: 6%; }
-  .Trabajos .TrabajosTitulo h2 {
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-style: italic; }
-  .Trabajos .TrabajosTitulo p {
-    text-align: justify; }
-  .Trabajos .TrabajosTitulo img {
-    height: auto;
-    width: 100%; }
-  .Trabajos .TrabajosTitulo a {
-    background-color: #353535;
-    padding: .5rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    color: #d8d8d8; }
+.Trabajos {
+  padding-left: 10%;
+  padding-right: 10%; }
+  .Trabajos .TituloTrabajo {
+    padding-top: 5%;
+    padding-bottom: 2%; }
+    .Trabajos .TituloTrabajo h2 {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      font-style: italic;
+      text-align: center; }
+  .Trabajos .ContenidoTrabajo {
+    padding-top: 5%;
+    padding-bottom: 5%h; }
+    .Trabajos .ContenidoTrabajo p {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center; }
+    .Trabajos .ContenidoTrabajo img {
+      height: auto;
+      width: 100%;
+      aspect-ratio: 1.77; }
+  .Trabajos hr {
+    margin-right: 10%;
+    margin-left: 10%; }
+  .Trabajos .btn-volver {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 6%; }
+    .Trabajos .btn-volver a {
+      background-color: #353535;
+      color: #d8d8d8;
+      padding: .45rem;
+      border-radius: .35rem;
+      text-decoration: none; }
+
+@media only screen and (max-width: 767px) {
+  .Trabajos {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .Estudio {
   height: 95vh; }
