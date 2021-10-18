@@ -37,4 +37,15 @@ $v-auto: auto;
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
+
+
+@media only screen and (max-width: 767px)
+    {
+        .ContactoTitulo{
+            h2{
+                font-size: 2.5rem
+            }
+        }
+        
+    }
 }
