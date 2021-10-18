@@ -11,89 +11,84 @@ $v-auto: auto;
 footer {
     background-color: $color-primario;
 
-    .FooterContactos {
-        padding: 1rem;
+    .Footer{
+        margin: auto;
 
-        .TituloF1 {
-            width: fit-content;
-            color: white;
-            
-            h4{
-                font-size: 1rem;
-            }
-            
-        }
-        
-        .FooterRed {
-            height: 4rem;
-            margin-bottom: 1rem;
-            
-        
-            .col-1 {
+        .FooterContactos {
+            padding: 1rem;
+    
+            .TituloF1 {
                 width: fit-content;
-                padding: 0 !important;
-                a{
-                    list-style: none;
-                    margin: $v-0;
-                    padding: $v-0 !important; 
-                    
-                    img{
-                        height: 1.5rem;
-                        width: 1.5rem;
-                        opacity: 60%;
-                        padding: 0 !important;
-                    }
-        
-                    img:hover{
-                        transition: .5s;
-                        transform: scale(1.15);
-                        opacity: 100%
-                    }
+                color: white;
+                
+                h4{
+                    font-size: 1rem;
                 }
             }
             
-        }
-    }
+            .FooterRed {
+                height: 4rem;
+                margin-bottom: 1rem;
 
-    .Ubicación {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-        .GoogleMaps {
-            margin: auto;
-            padding: 0;
-            border-radius: .5rem;
-            border: rgb(0, 0, 0) 1px solid;
-            width: 16rem;
-            height: 16rem ;
-        }
-    }
-
-    .CopyRight {
-        text-align: center;
-        margin-bottom: 1rem;
-        color: white;
-        padding: 0;
-
-        .CopyRight h5{
-            margin-top: 1rem !important;
-            margin-bottom: .5rem !important;
-            font-size: 1rem;
+                .col-1 {
+                    width: fit-content;
+                    padding: 0 !important;
+                    a{
+                        list-style: none;
+                        margin: $v-0;
+                        padding: $v-0 !important; 
+                        
+                        img{
+                            height: 1.5rem;
+                            width: 1.5rem;
+                            opacity: 60%;
+                            padding: 0 !important;
+                        }
             
+                        img:hover{
+                            transition: .5s;
+                            transform: scale(1.15);
+                            opacity: 100%
+                        }
+                    }
+                }
+            }
         }
-
-        .CopyRight p{
-            font-size: .75rem;
-            margin: 0;
+    
+        .Ubicación {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+    
+            .GoogleMaps {
+                margin: auto;
+                padding: 0;
+                border-radius: .5rem;
+                border: rgb(0, 0, 0) 1px solid;
+                width: 16rem;
+                height: 16rem ;
+            }
         }
-
+    
+        .CopyRight {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: white;
+            padding: 0;
+    
+            .CopyRight h5{
+                margin-top: 1rem !important;
+                margin-bottom: .5rem !important;
+                font-size: 1rem;
+                
+            }
+    
+            .CopyRight p{
+                font-size: .75rem;
+                margin: 0;
+            }
+        }
     }
-
 }
-
-
-
-
 
 .CopyRight {
     text-align: center;
@@ -106,7 +101,6 @@ footer {
     margin-bottom: .5rem !important;
     padding: 0;
     font-size: 1rem;
-    
 }
 
 .CopyRight p{

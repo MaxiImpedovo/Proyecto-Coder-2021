@@ -15,12 +15,13 @@ main{
 
     padding: $v-0;
     background-color: $color-secundario;
-    height: 97vh;    
 }
-.Home{
-    
+
+.HomeSec{
+    height: 95vh; 
     padding-top: 4%;
     padding-bottom: 4%;
+    margin: auto !important;
 
     h2{
         font-family: $font-secundaria;
@@ -109,8 +110,6 @@ main{
         }
     
     }
-    
-    
-    
 }
+
 

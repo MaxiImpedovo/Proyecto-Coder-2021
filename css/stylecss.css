@@ -3,68 +3,63 @@ header {
   background-color: #353535;
   padding: 0 !important; }
 
-.NavBarType {
-  background-color: #353535;
-  height: 3.5rem;
-  padding: 0 !important;
-  margin: auto;
-  width: 100% !important; }
-  .NavBarType .DivRow {
-    padding-top: .5rem;
-    height: 100%;
-    width: 100% !important;
-    margin: 0 !important; }
-    .NavBarType .DivRow .ImgType {
-      height: 1.5rem;
-      width: 1.5rem; }
-    .NavBarType .DivRow .DivAHome {
-      margin-left: 0%;
+.DivRow {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  height: 100%;
+  width: 100% !important;
+  margin: auto !important; }
+  .DivRow .ImgType {
+    height: 1.5rem;
+    width: 1.5rem; }
+  .DivRow .DivAHome {
+    margin-left: 0%;
+    padding: 0;
+    width: fit-content; }
+    .DivRow .DivAHome a {
+      text-decoration: none;
+      color: white;
+      width: auto;
+      text-align: start; }
+      .DivRow .DivAHome a h3 {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        border-radius: .20rem;
+        padding: .5rem;
+        font-size: 1.2rem;
+        margin: 0; }
+  .DivRow .DivUL {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .DivRow .DivUL .DivANav {
       padding: 0;
       width: fit-content; }
-      .NavBarType .DivRow .DivAHome a {
+      .DivRow .DivUL .DivANav a {
         text-decoration: none;
         color: white;
         width: auto;
-        text-align: start; }
-        .NavBarType .DivRow .DivAHome a h3 {
-          font-family: "Barlow Semi Condensed", sans-serif;
+        padding: 0;
+        text-align: center; }
+        .DivRow .DivUL .DivANav a h3 {
           border-radius: .20rem;
           padding: .5rem;
-          font-size: 1.2rem;
+          font-size: .9rem;
           margin: 0; }
-    .NavBarType .DivRow .DivUL {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .NavBarType .DivRow .DivUL .DivANav {
-        padding: 0;
-        width: fit-content; }
-        .NavBarType .DivRow .DivUL .DivANav a {
-          text-decoration: none;
-          color: white;
-          width: auto;
-          padding: 0;
-          text-align: center; }
-          .NavBarType .DivRow .DivUL .DivANav a h3 {
-            border-radius: .20rem;
-            padding: .5rem;
-            font-size: .9rem;
-            margin: 0; }
-  .NavBarType .DivANav :hover {
+  .DivRow .DivANav :hover {
     transform: scale(1.1);
     transition: .25s;
     background-color: #c8c8c8;
     color: #161616; }
   @media only screen and (max-width: 767px) {
-    .NavBarType .DivAHome {
+    .DivRow .DivAHome {
       margin-left: 0 !important;
       width: fit-content; }
-    .NavBarType .DivAHome :hover {
+    .DivRow .DivAHome :hover {
       transform: scale(1.3);
       transition: .25s;
       background-color: #353535;
       color: white; }
-    .NavBarType .DivANav :hover {
+    .DivRow .DivANav :hover {
       transform: scale(1.3);
       transition: .25s;
       background-color: #353535;
@@ -72,54 +67,56 @@ header {
 
 footer {
   background-color: #353535; }
-  footer .FooterContactos {
-    padding: 1rem; }
-    footer .FooterContactos .TituloF1 {
-      width: fit-content;
-      color: white; }
-      footer .FooterContactos .TituloF1 h4 {
-        font-size: 1rem; }
-    footer .FooterContactos .FooterRed {
-      height: 4rem;
-      margin-bottom: 1rem; }
-      footer .FooterContactos .FooterRed .col-1 {
+  footer .Footer {
+    margin: auto; }
+    footer .Footer .FooterContactos {
+      padding: 1rem; }
+      footer .Footer .FooterContactos .TituloF1 {
         width: fit-content;
-        padding: 0 !important; }
-        footer .FooterContactos .FooterRed .col-1 a {
-          list-style: none;
-          margin: 0;
+        color: white; }
+        footer .Footer .FooterContactos .TituloF1 h4 {
+          font-size: 1rem; }
+      footer .Footer .FooterContactos .FooterRed {
+        height: 4rem;
+        margin-bottom: 1rem; }
+        footer .Footer .FooterContactos .FooterRed .col-1 {
+          width: fit-content;
           padding: 0 !important; }
-          footer .FooterContactos .FooterRed .col-1 a img {
-            height: 1.5rem;
-            width: 1.5rem;
-            opacity: 60%;
+          footer .Footer .FooterContactos .FooterRed .col-1 a {
+            list-style: none;
+            margin: 0;
             padding: 0 !important; }
-          footer .FooterContactos .FooterRed .col-1 a img:hover {
-            transition: .5s;
-            transform: scale(1.15);
-            opacity: 100%; }
-  footer .Ubicación {
-    margin-top: 1rem;
-    margin-bottom: 1rem; }
-    footer .Ubicación .GoogleMaps {
-      margin: auto;
-      padding: 0;
-      border-radius: .5rem;
-      border: black 1px solid;
-      width: 16rem;
-      height: 16rem; }
-  footer .CopyRight {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: white;
-    padding: 0; }
-    footer .CopyRight .CopyRight h5 {
-      margin-top: 1rem !important;
-      margin-bottom: .5rem !important;
-      font-size: 1rem; }
-    footer .CopyRight .CopyRight p {
-      font-size: .75rem;
-      margin: 0; }
+            footer .Footer .FooterContactos .FooterRed .col-1 a img {
+              height: 1.5rem;
+              width: 1.5rem;
+              opacity: 60%;
+              padding: 0 !important; }
+            footer .Footer .FooterContactos .FooterRed .col-1 a img:hover {
+              transition: .5s;
+              transform: scale(1.15);
+              opacity: 100%; }
+    footer .Footer .Ubicación {
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+      footer .Footer .Ubicación .GoogleMaps {
+        margin: auto;
+        padding: 0;
+        border-radius: .5rem;
+        border: black 1px solid;
+        width: 16rem;
+        height: 16rem; }
+    footer .Footer .CopyRight {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: white;
+      padding: 0; }
+      footer .Footer .CopyRight .CopyRight h5 {
+        margin-top: 1rem !important;
+        margin-bottom: .5rem !important;
+        font-size: 1rem; }
+      footer .Footer .CopyRight .CopyRight p {
+        font-size: .75rem;
+        margin: 0; }
 
 .CopyRight {
   text-align: center;
@@ -140,29 +137,30 @@ footer {
 
 main {
   padding: 0;
-  background-color: #d8d8d8;
-  height: 97vh; }
+  background-color: #d8d8d8; }
 
-.Home {
+.HomeSec {
+  height: 95vh;
   padding-top: 4%;
-  padding-bottom: 4%; }
-  .Home h2 {
+  padding-bottom: 4%;
+  margin: auto !important; }
+  .HomeSec h2 {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: .8rem;
     font-weight: 600; }
-  .Home .Titulo1 {
+  .HomeSec .Titulo1 {
     font-family: "Bebas Neue", cursive;
     font-size: 4rem;
     font-weight: 400;
     padding: 0;
     margin: 0; }
-  .Home .contenedor_rotacion {
+  .HomeSec .contenedor_rotacion {
     margin: 0;
     padding: 0;
     width: 16rem;
     height: 3rem;
     overflow: hidden; }
-    .Home .contenedor_rotacion ul {
+    .HomeSec .contenedor_rotacion ul {
       padding: 0px;
       list-style: none;
       font-size: 2.5rem;
@@ -189,57 +187,61 @@ main {
     margin-top: -3rem; }
   100% {
     margin-top: 0; } }
-  .Home .CarouselHome {
+  .HomeSec .CarouselHome {
     padding-top: var(--bs-gutter-x, 0.75rem);
     padding-bottom: var(--bs-gutter-x, 0.75rem); }
-    .Home .CarouselHome .TituloA {
+    .HomeSec .CarouselHome .TituloA {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 1rem;
       text-decoration: none;
       color: black; }
-    .Home .CarouselHome .TituloB {
+    .HomeSec .CarouselHome .TituloB {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 1rem;
       text-decoration: none;
       color: white; }
-    .Home .CarouselHome .PA {
+    .HomeSec .CarouselHome .PA {
       font-size: .8em;
       color: black; }
-    .Home .CarouselHome .PB {
+    .HomeSec .CarouselHome .PB {
       font-size: .8em; }
 
-.Proyectos .TituloProyectos {
+main .TituloProyectos {
+  margin: auto;
   padding-top: 1rem;
   margin-bottom: 1rem;
   height: 15vh;
   border-bottom: black solid 1.5px; }
-  .Proyectos .TituloProyectos h2 {
+  main .TituloProyectos h2 {
     width: fit-content;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 3rem;
     font-weight: 400;
     font-style: italic; }
 
-.Proyectos .ContenidoProyecto {
-  padding-bottom: 5rem; }
-  .Proyectos .ContenidoProyecto .CajaProyecto {
+main .ContenidoProyecto {
+  padding-bottom: 5rem;
+  margin: auto; }
+  main .ContenidoProyecto .CajaProyecto {
     padding: .5rem; }
-    .Proyectos .ContenidoProyecto .CajaProyecto a .ImagenProyectos {
-      height: fit-content;
+    main .ContenidoProyecto .CajaProyecto a .ImagenProyectos {
       width: 100%;
+      aspect-ratio: 1.77;
       opacity: 70%;
       border-radius: .25rem; }
-    .Proyectos .ContenidoProyecto .CajaProyecto a :hover {
+    main .ContenidoProyecto .CajaProyecto a :hover {
       transform: scale(1.04);
       transition: .5s;
       opacity: 100%; }
 
 .Trabajos {
   padding-left: 10%;
-  padding-right: 10%; }
+  padding-right: 10%;
+  margin: auto; }
   .Trabajos .TituloTrabajo {
+    margin: auto;
     padding-top: 5%;
     padding-bottom: 2%; }
     .Trabajos .TituloTrabajo h2 {
@@ -249,6 +251,7 @@ main {
       font-style: italic;
       text-align: center; }
   .Trabajos .ContenidoTrabajo {
+    margin: auto;
     padding-top: 5%;
     padding-bottom: 5%h; }
     .Trabajos .ContenidoTrabajo p {
@@ -263,6 +266,7 @@ main {
     margin-right: 10%;
     margin-left: 10%; }
   .Trabajos .btn-volver {
+    margin: auto;
     display: flex;
     justify-content: center;
     padding-top: 3%;
@@ -280,6 +284,7 @@ main {
     padding-right: 0; } }
 
 .Estudio {
+  margin: auto;
   height: 95vh; }
   .Estudio .EstudioDiv {
     height: fit-content; }
@@ -297,16 +302,17 @@ main {
   height: 100%; }
 
 .perfil-titulo {
-  padding-bottom: 2rem;
-  border-bottom: black solid 1px;
-  height: 15vh; }
+  margin: auto;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  height: 15vh;
+  border-bottom: black solid 1.5px; }
   .perfil-titulo h2 {
-    padding-top: 2rem;
+    width: fit-content;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 3rem;
     font-weight: 400;
-    font-style: italic;
-    margin-bottom: 2rem; }
+    font-style: italic; }
 
 .Perfil {
   height: 100%;
@@ -353,18 +359,21 @@ main {
           transform: scale(1.15);
           opacity: 100%; }
 
-.contacto .ContactoTitulo {
-  padding-bottom: 2rem;
-  border-bottom: black solid 1px;
-  height: 15vh; }
-  .contacto .ContactoTitulo h2 {
-    padding-top: 2rem;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 2rem; }
-
-.contacto .Formulario {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
+.contacto {
+  height: 95vh; }
+  .contacto .ContactoTitulo {
+    margin: auto;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    height: 15vh;
+    border-bottom: black solid 1.5px; }
+    .contacto .ContactoTitulo h2 {
+      width: fit-content;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      font-style: italic; }
+  .contacto .Formulario {
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }

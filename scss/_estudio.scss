@@ -11,10 +11,11 @@ $v-100: 100%;
 $v-auto: auto;
 
 .Estudio{
-
+    margin: auto;
     height: 95vh;
 
     .EstudioDiv{
+    
         height: fit-content;
     
         h2{
@@ -25,11 +26,13 @@ $v-auto: auto;
             font-style: italic;
             margin-bottom: 2rem;
         }
-
+    
         p{
             text-align: center;
         }
     }
 }
+
+
 
 
