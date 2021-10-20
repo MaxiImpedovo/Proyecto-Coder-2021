@@ -190,29 +190,38 @@ main {
   .HomeSec .CarouselHome {
     padding-top: var(--bs-gutter-x, 0.75rem);
     padding-bottom: var(--bs-gutter-x, 0.75rem); }
-    .HomeSec .CarouselHome .TituloA {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      color: black; }
-    .HomeSec .CarouselHome .TituloB {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      color: white; }
-    .HomeSec .CarouselHome .PA {
-      font-size: .8em;
-      color: black; }
-    .HomeSec .CarouselHome .PB {
-      font-size: .8em; }
+    .HomeSec .CarouselHome .carousel-caption {
+      position: absolute;
+      right: 15%;
+      top: .5rem;
+      /* bottom: 1.25rem; */
+      left: 15%;
+      color: #fff;
+      text-align: center; }
+      .HomeSec .CarouselHome .carousel-caption .TituloA {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        color: black; }
+      .HomeSec .CarouselHome .carousel-caption .TituloB {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white; }
+      .HomeSec .CarouselHome .carousel-caption .PA {
+        font-size: .8em;
+        color: black; }
+      .HomeSec .CarouselHome .carousel-caption .PB {
+        font-size: .8em; }
 
 main .TituloProyectos {
   margin: auto;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
-  height: 15vh;
+  height: fit-content;
   border-bottom: black solid 1.5px; }
   main .TituloProyectos h2 {
     width: fit-content;
@@ -288,19 +297,39 @@ main .ContenidoProyecto {
     padding-right: 0; } }
 
 .Estudio {
-  margin: auto;
-  height: 95vh; }
-  .Estudio .EstudioDiv {
-    height: fit-content; }
-    .Estudio .EstudioDiv h2 {
-      text-align: center;
+  margin: auto; }
+  .Estudio .EstudioTitulo {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    height: fit-content;
+    border-bottom: black solid 1.5px; }
+    .Estudio .EstudioTitulo h2 {
+      width: fit-content;
       font-family: "Barlow Semi Condensed", sans-serif;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: 400;
-      font-style: italic;
-      margin-bottom: 2rem; }
-    .Estudio .EstudioDiv p {
-      text-align: center; }
+      font-style: italic; }
+  .Estudio .EstudioParrafo {
+    height: 80vh;
+    padding-top: 10rem;
+    text-align: center; }
+
+@media only screen and (max-width: 1024px) {
+  .EstudioParrafo {
+    height: 40vh !important;
+    font-size: 1rem;
+    padding-top: 5rem !important;
+    padding-bottom: 2rem !important; } }
+
+@media only screen and (max-width: 767px) {
+  .EstudioTitulo h2 {
+    font-size: 2.5rem !important; }
+  .EstudioParrafo {
+    height: fit-content !important;
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important; } }
 
 main {
   height: 100%; }
@@ -308,8 +337,9 @@ main {
 .perfil-titulo {
   margin: auto;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
-  height: 15vh;
+  height: fit-content;
   border-bottom: black solid 1.5px; }
   .perfil-titulo h2 {
     width: fit-content;
@@ -368,12 +398,13 @@ main {
           opacity: 100%; }
 
 .contacto {
-  height: 95vh; }
+  height: fit-content; }
   .contacto .ContactoTitulo {
     margin: auto;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
-    height: 15vh;
+    height: fit-content;
     border-bottom: black solid 1.5px; }
     .contacto .ContactoTitulo h2 {
       width: fit-content;

@@ -82,32 +82,42 @@ main{
     .CarouselHome{
         padding-top: var(--bs-gutter-x, 0.75rem);
         padding-bottom: var(--bs-gutter-x, 0.75rem);
-        
-        .TituloA {
-            font-family: $font-tercera;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            color: black;
-        }
-        
-        .TituloB{
-            font-family: $font-tercera;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            color: white;
-        }
 
-        .PA {
-            font-size: .8em;
-            color: black;
-        }
-
-        .PB{
-            font-size: .8em;
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            top: .5rem;
+            /* bottom: 1.25rem; */
+            left: 15%;
+            color: #fff;
+            text-align: center;
             
-        }
+            .TituloA {
+                font-family: $font-tercera;
+                font-weight: 600;
+                font-size: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+            
+            .TituloB{
+                font-family: $font-tercera;
+                font-weight: 600;
+                font-size: 1rem;
+                text-decoration: none;
+                color: white;
+            }
+    
+            .PA {
+                font-size: .8em;
+                color: black;
+            }
+    
+            .PB{
+                font-size: .8em;
+                
+            }
+        }   
     }
 }
 
