@@ -15,28 +15,41 @@ main{
 
     padding: $v-0;
     background-color: $color-secundario;
+    position: relative;
 }
 
+
+
 .HomeSec{
-    height: 95vh; 
-    padding-top: 4%;
-    padding-bottom: 4%;
+    
+    // padding-top: 4%;
+    // padding-bottom: 4%;
     margin: auto !important;
 
-    h2{
-        font-family: $font-secundaria;
-        font-size: .8rem;
-        font-weight: 600;
+    .TextoHome{
+        display: inline;
+        padding-left: 15%;
+        z-index: 1;
+        position: absolute;
+        color: white;
+
+        h2{
+            font-family: $font-secundaria;
+            font-size: .8rem;
+            font-weight: 600;
+        }
+        
+    
+        .Titulo1 {
+            font-family: $font-titulo;
+            font-size: 4rem;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+        }
+        
     }
     
-
-    .Titulo1 {
-        font-family: $font-titulo;
-        font-size: 4rem;
-        font-weight: 400;
-        padding: 0;
-        margin: 0;
-    }
 
     .contenedor_rotacion{
         
@@ -44,7 +57,6 @@ main{
         padding: 0;
         width: 16rem;
         height: 3rem;
-
         overflow: hidden;
 
         ul{
@@ -75,50 +87,86 @@ main{
             100%{margin-top: 0;}
 
         }
-    }
 
-
-
+    
+    
+    } 
+    
     .CarouselHome{
-        padding-top: var(--bs-gutter-x, 0.75rem);
-        padding-bottom: var(--bs-gutter-x, 0.75rem);
+        position: relative;
+        padding: 0!important;
+        margin: 0!important;
+        width: 100%;
+        aspect-ratio: 1.78;
+        background-color: black !important; 
+        
+        img{
+            opacity: 70%;
+            width: 100%;
+            aspect-ratio: 1.78;
+            
+        }
 
         .carousel-caption {
-            position: absolute;
+            
             right: 15%;
             top: .5rem;
             /* bottom: 1.25rem; */
             left: 15%;
             color: #fff;
             text-align: center;
-            
+
             .TituloA {
                 font-family: $font-tercera;
                 font-weight: 600;
                 font-size: 1rem;
                 text-decoration: none;
-                color: black;
-            }
-            
-            .TituloB{
-                font-family: $font-tercera;
-                font-weight: 600;
-                font-size: 1rem;
-                text-decoration: none;
                 color: white;
-            }
-    
-            .PA {
-                font-size: .8em;
-                color: black;
-            }
-    
-            .PB{
-                font-size: .8em;
                 
             }
-        }   
+
+            .PA {
+                font-size: .8em;
+                color: white;
+            }
+        }
+    }
+    .Flechas{
+        z-index: 3;
     }
 }
+
+@media only screen and (max-width: 767px)
+        {
+            .HomeSec{
+                
+                padding-bottom: 1rem;
+
+                .TextoHome{
+                    padding-left: 0;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    position: relative;
+                    display: block;
+                    color: black;
+                }
+
+                .CarouselHome {
+                    position: relative;
+                    height: 70vh;
+                    aspect-ratio: 1.77;
+                    width: auto !important;
+                    
+                    img{
+                        height: 70vh;
+                        object-fit: cover
+                                        
+                    }
+                }
+            }  
+        }
+        
+
+
 
 

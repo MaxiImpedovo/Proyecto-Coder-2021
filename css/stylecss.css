@@ -137,23 +137,27 @@ footer {
 
 main {
   padding: 0;
-  background-color: #d8d8d8; }
+  background-color: #d8d8d8;
+  position: relative; }
 
 .HomeSec {
-  height: 95vh;
-  padding-top: 4%;
-  padding-bottom: 4%;
   margin: auto !important; }
-  .HomeSec h2 {
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: .8rem;
-    font-weight: 600; }
-  .HomeSec .Titulo1 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 4rem;
-    font-weight: 400;
-    padding: 0;
-    margin: 0; }
+  .HomeSec .TextoHome {
+    display: inline;
+    padding-left: 15%;
+    z-index: 1;
+    position: absolute;
+    color: white; }
+    .HomeSec .TextoHome h2 {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-size: .8rem;
+      font-weight: 600; }
+    .HomeSec .TextoHome .Titulo1 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 4rem;
+      font-weight: 400;
+      padding: 0;
+      margin: 0; }
   .HomeSec .contenedor_rotacion {
     margin: 0;
     padding: 0;
@@ -188,10 +192,17 @@ main {
   100% {
     margin-top: 0; } }
   .HomeSec .CarouselHome {
-    padding-top: var(--bs-gutter-x, 0.75rem);
-    padding-bottom: var(--bs-gutter-x, 0.75rem); }
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    aspect-ratio: 1.78;
+    background-color: black !important; }
+    .HomeSec .CarouselHome img {
+      opacity: 70%;
+      width: 100%;
+      aspect-ratio: 1.78; }
     .HomeSec .CarouselHome .carousel-caption {
-      position: absolute;
       right: 15%;
       top: .5rem;
       /* bottom: 1.25rem; */
@@ -203,18 +214,31 @@ main {
         font-weight: 600;
         font-size: 1rem;
         text-decoration: none;
-        color: black; }
-      .HomeSec .CarouselHome .carousel-caption .TituloB {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        font-size: 1rem;
-        text-decoration: none;
         color: white; }
       .HomeSec .CarouselHome .carousel-caption .PA {
         font-size: .8em;
-        color: black; }
-      .HomeSec .CarouselHome .carousel-caption .PB {
-        font-size: .8em; }
+        color: white; }
+  .HomeSec .Flechas {
+    z-index: 3; }
+
+@media only screen and (max-width: 767px) {
+  .HomeSec {
+    padding-bottom: 1rem; }
+    .HomeSec .TextoHome {
+      padding-left: 0;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      position: relative;
+      display: block;
+      color: black; }
+    .HomeSec .CarouselHome {
+      position: relative;
+      height: 70vh;
+      aspect-ratio: 1.77;
+      width: auto !important; }
+      .HomeSec .CarouselHome img {
+        height: 70vh;
+        object-fit: cover; } }
 
 main .TituloProyectos {
   margin: auto;
