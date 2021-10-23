@@ -336,6 +336,7 @@ main .ContenidoProyecto {
       font-weight: 400;
       font-style: italic; }
   .Estudio .EstudioParrafo {
+    margin: auto;
     height: 80vh;
     padding-top: 10rem;
     text-align: center; }
